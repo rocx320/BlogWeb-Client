@@ -67,8 +67,8 @@ export const Register = () => {
             {/*Header End*/}
             <div className="registration-page">
                 <div className="header">
-                    <span className="head">Welcome to DevEcho</span>
-                    <span className="tag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, vitae!</span>
+                    <span className="head">Welcome to BlogPost</span>
+                    <span className="tag">Explore the world of Blogs</span>
                 </div>
                 <form onSubmit={handleSubmit} className="registration-form">
                     <label htmlFor="name">Name</label>

@@ -98,10 +98,10 @@ export const Home = () => {
                     {/* Hero Section */}
                     <section className="hero">
                         <header>
-                            <h1>Welcome to DevEcho</h1>
+                            <h1>Welcome to BlogPost</h1>
                         </header>
                         <p className="tagline">Explore the world of development through insightful blog posts.</p>
-                        <Link to={"/register"} className="cta-button">Get Started</Link>
+                        <Link to={"/register"} className="cta-button">Explore</Link>
                     </section>
 
                     {/* Feed Section */}
@@ -146,19 +146,35 @@ export const Home = () => {
                                 !active &&
                                 posts.map(((value, index) => {
                                     return (
-                                        <div className="card" key={index}>
-                                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog Post 1"/>
-                                            <h2>{value.title}</h2>
-                                            <p className="description">{value.content.substring(0, 25)}</p>
-                                            <p className="description">Tags: {value.tags}</p>
-                                            <p className="description">Category: {value.category}</p>
-                                            <p className="description">Posted: {value.created_at.substring(0, 19)}</p>
-                                            <div className="feedback">
-                                                <button className="like-button">Like</button>
-                                                <button className="dislike-button">Dislike</button>
-                                            </div>
+                                      <div className="card" key={index}>
+                                        <img
+                                          src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                          alt="Blog Post 1"
+                                        />
+                                        <h2>{value.title}</h2>
+                                        <p className="description">
+                                          {value.content.substring(0, 25)}
+                                        </p>
+                                        <p className="description">
+                                          Tags: {value.tags}
+                                        </p>
+                                        <p className="description">
+                                          Category: {value.category}
+                                        </p>
+                                        <p className="description">
+                                          Posted:{" "}
+                                          {value.created_at.substring(0, 19)}
+                                        </p>
+                                        <div className="feedback">
+                                          <button className="like-button">
+                                            Like
+                                          </button>
+                                          <button className="dislike-button">
+                                            Dislike
+                                          </button>
                                         </div>
-                                    )
+                                      </div>
+                                    );
                                 }))
                             }
                             {

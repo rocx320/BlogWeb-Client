@@ -6,7 +6,7 @@ export const Footer = () => {
             <footer>
                 {/* Logo Section */}
                 <div className="logo-section">
-                    <span>DevEcho</span>
+                    <span>BlogPost</span>
                 </div>
 
                 {/* Links Section */}
@@ -21,7 +21,7 @@ export const Footer = () => {
 
                 {/* Copyright Section */}
                 <div className="copyright-section">
-                    <p>&copy; 2023 DevEcho. All rights reserved.</p>
+                    <p>&copy; 2023 BlogPost. All rights reserved.</p>
                 </div>
             </footer>
         </>
